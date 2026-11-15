@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+  <key>CFBundleName</key><string>23</string>
+  <key>CFBundleDisplayName</key><string>23</string>
+  <key>CFBundleIdentifier</key><string>local.twentythree</string>
+  <key>CFBundleExecutable</key><string>TwentyThree</string>
+  <key>CFBundlePackageType</key><string>APPL</string>
+  <key>CFBundleShortVersionString</key><string>0.1</string>
+  <key>CFBundleVersion</key><string>1</string>
+  <key>LSMinimumSystemVersion</key><string>26.0</string>
+  <key>CFBundleIconFile</key><string>AppIcon</string>
+  <key>NSHighResolutionCapable</key><true/>
+  <key>NSMicrophoneUsageDescription</key><string>23 listens only while you hold ⌃⌥Space or have the mic button on, so you can talk to it.</string>
+  <key>NSSpeechRecognitionUsageDescription</key><string>23 turns what you say into text on this Mac (on-device only) when VoiceStudio isn't running.</string>
+  <key>NSAppleEventsUsageDescription</key><string>23 opens, lists, switches and closes its own Chrome tabs so you can watch it browse.</string>
+  <!-- Remote mode talks to the Mac that runs 23 over Tailscale (WireGuard-encrypted), by name (*.ts.net) or by its 100.x address. -->
+  <key>NSAppTransportSecurity</key>
+  <dict>
+    <key>NSAllowsLocalNetworking</key><true/>
+    <key>NSExceptionDomains</key>
+    <dict>
+      <key>ts.net</key>
+      <dict>
+        <key>NSIncludesSubdomains</key><true/>
+        <key>NSExceptionAllowsInsecureHTTPLoads</key><true/>
+      </dict>
+    </dict>
+  </dict>
+</dict></plist>

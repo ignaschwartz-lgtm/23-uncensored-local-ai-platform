@@ -1,0 +1,24 @@
+{
+  "fill-specializations" : [
+    { "value" : { "linear-gradient" : [ "extended-gray:0.97,1.0", "extended-gray:0.88,1.0" ] } },
+    { "appearance" : "dark", "value" : { "linear-gradient" : [ "extended-gray:0.24,1.0", "extended-gray:0.13,1.0" ] } }
+  ],
+  "groups" : [
+    {
+      "layers" : [
+        {
+          "image-name" : "drops.png",
+          "name" : "drops",
+          "glass" : true,
+          "fill-specializations" : [
+            { "appearance" : "dark", "value" : { "solid" : "extended-gray:0.86,1.0" } }
+          ]
+        }
+      ],
+      "shadow" : { "kind" : "neutral", "opacity" : 0.5 },
+      "specular" : true,
+      "translucency" : { "enabled" : true, "value" : 0.4 }
+    }
+  ],
+  "supported-platforms" : { "squares" : [ "macOS" ] }
+}
